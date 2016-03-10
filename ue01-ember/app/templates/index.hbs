@@ -1,0 +1,14 @@
+<h1>Hundehaus</h1>
+
+{{#link-to "wasistdas"}}Eine Route{{/link-to}}
+
+{{#each model as |dog|}}
+  <h2>{{dog.name}}</h2>
+  <p>Breed: {{dog.breed}}</p>
+  <p>Color: {{dog.color}}</p>
+  <p>Smile: {{dog.smile}}</p>
+  <img style="max-width:300px" src="{{dog.image}}" >
+  <hr>
+{{/each}}
+
+{{outlet}}
