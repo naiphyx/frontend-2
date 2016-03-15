@@ -2,13 +2,11 @@
 
 {{#link-to "wasistdas"}}Eine Route{{/link-to}}
 
+<ul>
 {{#each model as |dog|}}
-  <h2>{{dog.name}}</h2>
-  <p>Breed: {{dog.breed}}</p>
-  <p>Color: {{dog.color}}</p>
-  <p>Smile: {{dog.smile}}</p>
-  <img style="max-width:300px" src="{{dog.image}}" >
-  <hr>
+  {{#dog-face dog=dog}}
+  {{/dog-face}}
 {{/each}}
+</ul>
 
 {{outlet}}
