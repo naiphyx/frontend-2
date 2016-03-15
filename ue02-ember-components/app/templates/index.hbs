@@ -1,0 +1,12 @@
+<h1>Hundehaus</h1>
+
+{{#link-to "wasistdas"}}Eine Route{{/link-to}}
+
+<ul>
+{{#each model as |dog|}}
+  {{#dog-face dog=dog}}
+  {{/dog-face}}
+{{/each}}
+</ul>
+
+{{outlet}}
