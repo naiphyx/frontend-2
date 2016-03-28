@@ -5,7 +5,8 @@ export default Ember.Component.extend({
 
   actions: {
     dogShowFace: function() {
-      this.$('.dogimg').css('display', 'inline')
+      this.$('.dogimg').css('display', 'inline');
+      this.$('.btn').remove();
     }
   }
 });
