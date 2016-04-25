@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<form {{action 'authenticate' on='submit'}}>
+  <label for="identification">Username</label>
+  {{input value=identification placeholder='Username' class='form-control'}}
+
+  <label for="password">Password</label>
+  {{input value=password placeholder='Password' class='form-control' type='password'}}
+
+  <button type="submit" class="btn btn-default">Log me in</button>
+
+  </form>
+
+  {{#if errorMessage}}
+    <p>
+      Login failed:
+      <code>{{errorMessage}}</code>
+    </p>
+  {{/if}}
